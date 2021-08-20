@@ -5,6 +5,7 @@ Required Modules
 Flask
 unittest
 requests
+PySide
 
 Contents
 Data - Test Data
