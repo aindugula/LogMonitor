@@ -25,6 +25,7 @@ class MainWindow(QMainWindow):
         self.ui.machinesCombo.addItems(list)
 
         self.ui.numLines.setValue(3)
+        self.ui.numLines.setMinimum(1)
         self.ui.show.setVisible(False)        
         self.ui.show.clicked.connect(self.showContents)
         self.ui.quit.clicked.connect(self.quitApp)

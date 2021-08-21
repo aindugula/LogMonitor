@@ -33,7 +33,7 @@ def get(logfile):
     if 'search' in request.args:
         searchTerm = request.args['search']
     
-    response = logContents.logContents(path + logfile, N, searchTerm)
+    response = logContents.logContents_Tail(path + logfile, N, searchTerm)
     
     app.logger.info('log request successfull')
     
